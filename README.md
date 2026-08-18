@@ -1,0 +1,1 @@
+O parquímetro é um calculado de tempo em tarifas de um estacionamento. Utiliza HTML definindo sua estrutura, CSS definindo o estilo visual, JavaScript proporciona o comportamento. O modo de uso é simples: insira um valor menor que 50 ou maior que 50 e veja você mesmo.
