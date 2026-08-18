@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estacionamento - POO</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento - POO</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <div class="scene">
+    <div class="scene">
+        <div class="pole"></div>
 
-    <!-- Pole -->
-    <div class="pole"></div>
+        <div class="meter-body">
 
-    <!-- Main meter body -->
-    <div class="meter-body">
+            <div class="meter-header">
+                <h1>Estacionamento</h1>
+                <div class="subtitle">Zona Azul - POO</div>
+            </div>
 
-      <!-- Header -->
-      <div class="meter-header">
-        <h1>Estacionamento</h1>
-        <div class="subtitle">Zona Azul - POO</div>
-      </div>
+            <div class="screws">
+                <div class="screw"></div>
+                <div class="screw"></div>
+            </div>
 
-      <!-- Decorative screws -->
-      <div class="screws">
-        <div class="screw"></div>
-        <div class="screw"></div>
-      </div>
+            <div class="display-window">
+                <div class="display-label">Tempo de permanência</div>
+                <div class="display-value idle" id="displayValue">-- : --</div>
+            </div>
 
-      <!-- Display window -->
-      <div class="display-window">
-        <div class="display-label">Tempo de permanência</div>
-        <div class="display-value idle" id="displayValue">-- : --</div>
-      </div>
+            <div class="result-rows">
+                <div class="result-row" id="rowTempo">
+                    <span class="label">Duração</span>
+                    <span class="val" id="valTempo">—</span>
+                </div>
 
-      <!-- Result rows -->
-      <div class="result-rows">
-        <div class="result-row" id="rowTempo">
-          <span class="label">Duração</span>
-          <span class="val" id="valTempo">—</span>
+                <div class="result-row" id="rowTroco">
+                    <span class="label">Troco</span>
+                    <span class="val" id="valTroco">—</span>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="coin-slot"></div>
+
+            <div class="input-section">
+                <label class="input-label" for="valorInput">
+                    Insira o valor (R$)
+                </label>
+
+                <div class="input-group">
+                    <div class="currency-prefix">R$</div>
+
+                    <input
+                        type="text"
+                        id="valorInput"
+                        placeholder="0,00"
+                    >
+
+                    <button class="calc-btn" id="calcBtn">OK</button>
+                </div>
+            </div>
+
+            <div class="meter-footer">
+                <div class="tariff-info">
+                    R$ 50,00 → 30 min<br>
+                    R$ 70,00 → 60 min<br>
+                    R$ 100,00 → 120 min
+                </div>
+
+                <div class="led-indicator" id="ledIndicator"></div>
+            </div>
+<br>
+            <div class="bottom-plate">
+                PREFEITURA MUNICIPAL - REGULAMENTO Nº 001/2026
+            </div>
+
         </div>
-        <div class="result-row" id="rowTroco">
-          <span class="label">Troco</span>
-          <span class="val" id="valTroco">—</span>
-        </div>
-      </div>
+    </div>
 
-      <div class="divider"></div>
-
-      <!-- Coin slot decoration -->
-      <div class="coin-slot"></div>
-
-      <!-- Input section -->
-      <div class="input-section">
-        <label class="input-label" for="valorInput">Insira o valor (R$)</label>
-        <div class="input-group">
-          <div class="currency-prefix">R$</div>
-          <input
-            type="text"
-            id="valorInput"
-            placeholder="0,00"
-            inputmode="decimal"
-            autocomplete="off"
-          />
-          <button class="calc-btn" id="calcBtn">OK</button>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <div class="meter-footer">
-        <div class="tariff-info">
-          R$ 1,00 → 30 min<br/>
-          R$ 1,75 → 60 min<br/>
-          R$ 3,00 → 120 min
-        </div>
-        <div class="led-indicator" id="ledIndicator"></div>
-      </div>
-      <!-- Bottom plate -->
-      <div class="bottom-plate">PREFEITURA MUNICIPAL - REGULAMENTO Nº 001/2026</div>
-    </div><!-- /.meter-body -->
-  </div><!-- /.scene -->
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
